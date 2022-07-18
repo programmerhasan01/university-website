@@ -4,6 +4,19 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+/* common styles */
+.section-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+.section-description {
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+/* common styles end */
 
 header {
   min-height: 100vh;
@@ -100,18 +113,6 @@ nav .fa-solid {
   padding-top: 100px;
 }
 
-.course h1 {
-  font-size: 36px;
-  font-weight: 600;
-}
-.course p {
-  color: #333;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
-}
-
 .row {
   margin-top: 5%;
   display: flex;
@@ -133,4 +134,51 @@ nav .fa-solid {
 
 .course-col:hover {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* campus */
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.campus-col img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all linear 0.3s;
+}
+.layer h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all linear 1s;
+  opacity: 0;
+}
+.layer:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+
+.layer:hover h3 {
+  opacity: 1;
 }
