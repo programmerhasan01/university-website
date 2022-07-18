@@ -25,4 +25,10 @@
   .nav-links ul {
     padding: 30px;
   }
+
+  /* courses */
+  .row {
+    margin-top: 2%;
+    flex-direction: column;
+  }
 }
