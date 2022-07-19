@@ -41,4 +41,13 @@
     display: block;
     margin: 0 auto 5px;
   }
+  /* call to action */
+  .call-to-action {
+    width: 90%;
+    padding: 80px 3px;
+    box-sizing: border-box;
+  }
+  .call-to-action h1 {
+    font-size: 16px;
+  }
 }

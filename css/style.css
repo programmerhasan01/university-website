@@ -252,3 +252,22 @@ nav .fa-solid {
 .testimonials .fa-regular {
   color: #f44336;
 }
+
+/* call to action */
+.call-to-action {
+  width: 80%;
+  margin: 100px auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.call-to-action h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+  font-size: 32px;
+}
