@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custome -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <header class="aboutus-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </header>
+
+    <main>
+      <!-- about us content -->
+      <section class="about-us">
+        <div class="row">
+          <div class="about-col">
+            <h1>We are the world's largest university</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              officiis exercitationem deserunt saepe possimus aut laudantium
+              eaque neque ut? Dicta ratione libero atque? Quasi neque animi
+              voluptatibus. Eum, explicabo obcaecati.
+            </p>
+            <a href="#" class="hero-btn red-btn">Explore Now</a>
+          </div>
+          <div class="about-col">
+            <img src="./images/about.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit sapiente
+        recusandae- <br />
+        porro eos non, perspiciatis odio, iure in nesciunt.
+      </p>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-twitter-square"></i>
+        <i class="fa-brands fa-instagram-square"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>
+        Made with <i class="fa-solid fa-heart"></i> <strong>Web Garden</strong>
+      </p>
+    </footer>
+
+    <!-- javascript for toogle menu -->
+    <script>
+      const navLinks = document.getElementById("navLinks");
+      const showMenu = () => {
+        navLinks.style.right = "0";
+      };
+      const hideMenu = () => {
+        navLinks.style.right = "-200px";
+      };
+    </script>
+  </body>
+</html>
