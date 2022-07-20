@@ -55,4 +55,14 @@
     text-align: center;
     font-size: 1.3rem;
   }
+  /* blog page */
+  .bolg-content .row {
+    flex-direction: column-reverse;
+  }
+  .blog-left {
+    margin-top: 50px;
+  }
+  .blog-left h2 {
+    text-align: center;
+  }
 }

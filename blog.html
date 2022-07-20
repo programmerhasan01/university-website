@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduford</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custome -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <header class="aboutus-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>
+        Our certificate &amp; online Programs For <span class="year"></span>
+      </h1>
+    </header>
+
+    <main>
+      <section class="bolg-content">
+        <div class="row">
+          <div class="blog-left">
+            <img src="./images/certificate.jpg" alt="" />
+            <h2>
+              Our certificate &amp; online Programs For
+              <span class="year"></span>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+              nihil error? Vero, ratione aliquam. Soluta dolorum reprehenderit
+              perspiciatis tempore quaerat commodi, ratione architecto
+              repudiandae molestiae laudantium explicabo eum perferendis ut!
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus debitis ex at quod! Maiores culpa error ab nam fuga
+              praesentium sequi assumenda ipsum, corrupti expedita consequatur
+              consectetur facere. Repellendus, quasi. Dicta voluptatem
+              temporibus laborum architecto fugiat, cupiditate rerum facere,
+              soluta in exercitationem dignissimos aut, animi iure nisi optio
+              debitis minima doloremque ullam perspiciatis. Doloribus velit
+              expedita sapiente eius error, sequi a, minima dolore ab animi illo
+              consectetur, eligendi nihil similique excepturi sint! Cumque at
+              officiis obcaecati omnis dignissimos earum labore voluptas rerum
+              odit enim ut blanditiis id ullam, ducimus, eveniet odio
+              accusantium consequuntur perferendis animi porro placeat.
+              Dignissimos porro cupiditate unde ipsa, consequatur, similique
+              aspernatur accusantium quos vel voluptas beatae? Tempore molestias
+              animi perspiciatis, sint natus ducimus nostrum, aliquam tenetur
+              neque reiciendis suscipit? Possimus suscipit et dolore non
+              doloribus animi aperiam. Excepturi optio saepe voluptate et ea
+              iste ducimus reiciendis quo. Libero magnam animi incidunt
+              temporibus hic, ea dolorum! Quod!
+            </p>
+            <!-- comment box -->
+            <div class="comment-box">
+              <h3>Leave a comment</h3>
+
+              <form class="comment-form">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter Name"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter Email"
+                />
+                <textarea rows="5" placeholder="Your comment"></textarea>
+                <button type="submit" class="hero-btn red-btn msg-btn">
+                  POST COMMENT
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+              <span>Business Analytics</span>
+              <span>21</span>
+            </div>
+            <div>
+              <span>Computer hardware</span>
+              <span>10</span>
+            </div>
+            <div>
+              <span>Web design</span>
+              <span>26</span>
+            </div>
+            <div>
+              <span>graphic design</span>
+              <span>10</span>
+            </div>
+            <div>
+              <span>wordpress</span>
+              <span>34</span>
+            </div>
+            <div>
+              <span>physics</span>
+              <span>42</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit sapiente
+        recusandae- <br />
+        porro eos non, perspiciatis odio, iure in nesciunt.
+      </p>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-twitter-square"></i>
+        <i class="fa-brands fa-instagram-square"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>
+        Made with <i class="fa-solid fa-heart"></i> <strong>Web Garden</strong>
+      </p>
+    </footer>
+
+    <!-- javascript for toogle menu -->
+    <script>
+      const navLinks = document.getElementById("navLinks");
+      const showMenu = () => {
+        navLinks.style.right = "0";
+      };
+      const hideMenu = () => {
+        navLinks.style.right = "-200px";
+      };
+
+      const currentYear = new Date().getFullYear();
+      const arr = document.getElementsByClassName("year");
+      for (const spn of arr) {
+        spn.innerText = `( ${currentYear} )`;
+      }
+    </script>
+  </body>
+</html>
