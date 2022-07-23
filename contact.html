@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
-    <header class="aboutus-header">
+    <header class="contact-header">
       <nav>
         <a href="index.html"><img src="images/logo.png" /></a>
         <div class="nav-links" id="navLinks">
@@ -41,25 +41,77 @@
         </div>
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
-      <h1>About Us</h1>
+      <h1>Contact Us</h1>
     </header>
 
     <main>
-      <!-- about us content -->
-      <section class="about-us">
+      <section class="location">
+        <!-- location with google map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.38703724756!2d90.27923971281079!3d23.78057325785754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1658328838763!5m2!1sen!2sbd"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      <section class="contact-us">
         <div class="row">
-          <div class="about-col">
-            <h1>We are the world's largest university</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              officiis exercitationem deserunt saepe possimus aut laudantium
-              eaque neque ut? Dicta ratione libero atque? Quasi neque animi
-              voluptatibus. Eum, explicabo obcaecati.
-            </p>
-            <a href="#" class="hero-btn red-btn">Explore Now</a>
+          <div class="contact-col">
+            <div>
+              <i class="fa-solid fa-house-chimney"></i>
+              <span>
+                <h5>web-garden, building</h5>
+                <p>Malibagh, Dhaka ( 1217 )</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa-solid fa-square-phone-flip"></i>
+              <span>
+                <h5>+880 1812783845</h5>
+                <p>saturday to thursday 10AM to 5PM</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa-solid fa-square-envelope"></i>
+              <span>
+                <h5>info@web-garden.com</h5>
+                <p>Email us your query</p>
+              </span>
+            </div>
           </div>
-          <div class="about-col">
-            <img src="./images/about.jpg" alt="" />
+          <div class="contact-col">
+            <form action="form-handler.php" method="post">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                required
+                name="name"
+              />
+              <input
+                type="email"
+                placeholder="Enter Email Address"
+                required
+                name="email"
+              />
+              <input
+                type="text"
+                placeholder="Enter your subject"
+                required
+                name="subject"
+              />
+              <textarea
+                rows="8"
+                placeholder="Your message"
+                name="message"
+                required
+              ></textarea>
+              <button type="submit" class="hero-btn red-btn">
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </section>
